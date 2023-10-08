@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container {
+  font-family: sans-serif;
+  display: flex;
+  height: 66px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  color: #5aa57d;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1279px) {
+  body .container {
+    height: 120px;
+    background-color: #5aa57d;
+    color: white;
+    display: grid;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .container {
+    height: 280px;
+  }
+}
+body .container .logo {
+  border-radius: 12px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .container .logo:hover {
+  background-color: #5aa57d;
+  color: white;
+}
+@media only screen and (max-width: 1279px) {
+  body .container .logo:hover {
+    width: 22%;
+    text-align: center;
+    color: #5aa57d;
+    background-color: white;
+  }
+}
+body .container .xBtn {
+  display: none;
+}
+@media only screen and (max-width: 1279px) {
+  body .container .xBtn {
+    display: block;
+    width: 100%;
+    text-align: right;
+    transition: 0.3s;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  body .container .menuList {
+    grid-column: 1/span 2;
+    grid-row: 2;
+    text-align: center;
+  }
+}
+body .container .menuList ul li {
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 15px;
+  display: inline;
+  margin: 0 7px;
+  transition: 0.3s;
+}
+body .container .menuList ul li:hover {
+  background-color: #5aa57d;
+  color: white;
+}
+@media only screen and (max-width: 1279px) {
+  body .container .menuList ul li {
+    margin: 0 50px;
+  }
+  body .container .menuList ul li:hover {
+    background-color: white;
+    color: #5aa57d;
+  }
+}
+@media only screen and (max-width: 1102px) {
+  body .container .menuList ul li {
+    margin: 0 15px;
+  }
+  body .container .menuList ul li:hover {
+    background-color: white;
+    color: #5aa57d;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .container .menuList ul li {
+    display: block;
+    text-align: center;
+  }
+}
